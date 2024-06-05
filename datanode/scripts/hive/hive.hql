@@ -41,15 +41,6 @@ STORED AS TEXTFILE
 LOCATION 'hdfs:///user/datapath/datasets/departments';
 
 
-CREATE TABLE IF NOT EXISTS departments_test
-(department_id int,
-department_name string
-)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-STORED AS TEXTFILE
-LOCATION 'hdfs:///user/datapath/datasets/departments_test';
-
 CREATE EXTERNAL TABLE IF NOT EXISTS order_items
 (order_item_id int,
 order_item_order_id int,
